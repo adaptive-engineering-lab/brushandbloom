@@ -1172,36 +1172,3 @@ body.bb-open { overflow: hidden; }
   .bb-fields { grid-template-columns: 1fr; }
   .bb-reassure { white-space: normal; text-align: center; }
 }
-
-/* ---------- Studio note (honest stand-in for testimonials) ---------- */
-.studio-note {
-  background: var(--white);
-  border: 1px solid var(--cream-line);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  padding: 42px 46px 36px;
-  text-align: center;
-}
-.studio-note__quote {
-  font-family: var(--font-serif);
-  font-size: 1.32rem;
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--brown);
-  margin-bottom: 24px;
-}
-.studio-note p { font-size: 0.96rem; color: var(--brown-soft); }
-.studio-note p:last-of-type { margin-bottom: 0; }
-.studio-note__sign {
-  display: block;
-  margin-top: 26px;
-  font-family: var(--font-script);
-  font-size: 1.9rem;
-  line-height: 1;
-  color: var(--rose);
-}
-
-@media (max-width: 760px) {
-  .studio-note { padding: 32px 26px 28px; }
-  .studio-note__quote { font-size: 1.15rem; }
-}
