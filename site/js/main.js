@@ -49,8 +49,8 @@
       "home.features.title": "Une soirée pensée pour se détendre",
       "home.steps.eyebrow": "Comment ça marche",
       "home.steps.title": "Votre soirée en quatre étapes",
-      "home.testimonials.eyebrow": "Ce qu'on en dit",
-      "home.testimonials.title": "Des soirées dont on se souvient",
+      "home.new.eyebrow": "En toute franchise",
+      "home.new.title": "Nous débutons",
       "home.cta.title": "Prêt·e à créer votre prochain souvenir ?",
       "home.cta.lead": "Places limitées à chaque atelier — réservez la vôtre avant qu'elle ne s'envole.",
 
@@ -114,8 +114,8 @@
       "home.features.title": "Een avond gemaakt om te ontspannen",
       "home.steps.eyebrow": "Hoe het werkt",
       "home.steps.title": "Jouw avond in vier stappen",
-      "home.testimonials.eyebrow": "Wat gasten zeggen",
-      "home.testimonials.title": "Avonden om te onthouden",
+      "home.new.eyebrow": "Eerlijk gezegd",
+      "home.new.title": "Wij zijn nieuw",
       "home.cta.title": "Klaar voor jouw volgende herinnering?",
       "home.cta.lead": "Beperkte plaatsen per workshop — boek de jouwe voor ze vol zit.",
 
