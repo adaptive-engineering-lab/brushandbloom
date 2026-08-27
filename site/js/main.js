@@ -15,7 +15,7 @@
      headings, footer, FAQ). Long paragraph copy is left in
      English by design since it's placeholder text the owner
      will likely replace — translate it here once final copy
-     is set (see README-CONTENT-TODO.md).
+     is set (see the README at the repo root).
   ------------------------------------------------- */
   var translations = {
     fr: {
@@ -41,6 +41,8 @@
       "home.meta.sessions": "Ateliers organisés",
       "home.meta.rating": "Note moyenne",
       "home.badge": "Prochain atelier bientôt",
+      "home.next.eyebrow": "Prochain atelier",
+      "home.next.title": "Votre prochaine soirée à l'atelier",
       "home.features.eyebrow": "Pourquoi Brush & Bloom",
       "home.features.title": "Une soirée pensée pour se détendre",
       "home.steps.eyebrow": "Comment ça marche",
@@ -102,6 +104,8 @@
       "home.meta.sessions": "Georganiseerde workshops",
       "home.meta.rating": "Gemiddelde score",
       "home.badge": "Volgende workshop binnenkort",
+      "home.next.eyebrow": "Volgende workshop",
+      "home.next.title": "Jouw volgende avond in het atelier",
       "home.features.eyebrow": "Waarom Brush & Bloom",
       "home.features.title": "Een avond gemaakt om te ontspannen",
       "home.steps.eyebrow": "Hoe het werkt",

@@ -8,7 +8,7 @@
    Session data and settings live in js/sessions.js — this
    file holds only behaviour. Vanilla JS, no dependencies.
 
-   Also renders the schedule list into [data-schedule], so the
+   Also renders the session list into [data-schedule], so the
    whole site reads from that one array.
    ========================================================= */
 
@@ -19,6 +19,13 @@
   var CFG = window.BB_CONFIG || {};
 
   var maxSeats = CFG.maxSeats || 6;
+
+  /* The public site advertises one evening at a time — see
+     showOnlyNextSession in js/sessions.js. The full array stays
+     available so future dates can be queued up behind it. */
+  function visible() {
+    return CFG.showOnlyNextSession === false ? SESSIONS : SESSIONS.slice(0, 1);
+  }
   var STEP_TITLES = ["Pick a session", "Choose your seats", "Who's coming?", "Review & checkout"];
 
   var state = {
@@ -91,7 +98,7 @@
   /* ---------------- steps ---------------- */
 
   function stepPick() {
-    var cards = SESSIONS.map(function (s) {
+    var cards = visible().map(function (s) {
       return el("button", {
         class: "bb-session",
         type: "button",
@@ -499,12 +506,12 @@
     if (!host) return;
     host.textContent = "";
 
-    if (!SESSIONS.length) {
-      host.appendChild(el("p", { text: "No dates on the calendar right now — check back soon." }));
+    if (!visible().length) {
+      host.appendChild(el("p", { class: "form-note text-center", text: "No dates on the calendar right now — check back soon." }));
       return;
     }
 
-    SESSIONS.forEach(function (s) {
+    visible().forEach(function (s) {
       host.appendChild(el("div", { class: "event-row" }, [
         el("div", { class: "event-row__date" }, [
           el("strong", { text: s.day }),

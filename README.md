@@ -7,15 +7,13 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies, nothing to insta
 
 ```
 site/                     ← this folder is what gets deployed
-  index.html              home
+  index.html              home, including the next-session block (#schedule)
   about.html              story + values
-  events.html             schedule, pricing, private events, FAQ
   gallery.html            colour-block tiles (real photos still outstanding)
-  contact.html            form + studio details
   css/style.css           the whole design system, plus the booking panel
   js/sessions.js          ← THE WEEKLY EDIT LIVES HERE
   js/booking-panel.js     booking panel behaviour + schedule rendering
-  js/main.js              nav, EN/FR/NL switcher, contact form
+  js/main.js              nav, EN/FR/NL switcher
   images/                 logo and favicons
 design_handoff_booking_panel/   original design handoff, kept for reference
 ```
@@ -23,7 +21,12 @@ design_handoff_booking_panel/   original design handoff, kept for reference
 ## Editing the schedule
 
 Open `site/js/sessions.js` and edit the `BB_SESSIONS` array. That single array feeds
-both the schedule on `events.html` and the booking panel — nothing else needs touching.
+both the next-session block on the home page and the booking panel — nothing else needs
+touching.
+
+**Only the first session in the array is ever shown publicly.** The site advertises one
+evening at a time (`BB_CONFIG.showOnlyNextSession`), so keep the next date at the top and
+queue future ones underneath. Set the flag to `false` to list them all.
 
 ```js
 {
@@ -70,16 +73,13 @@ Other settings in the same object: `maxSeats` (default 6), `collectPhone`,
 
 ## Still placeholder
 
-- `[YOUR PHONE NUMBER]` — footer of every page, and `contact.html`
-- `[Add your full studio address]` and `[Add your opening hours…]` — `contact.html`
-- The map box on `contact.html` — swap for a Google Maps embed once the address is set
+- `[YOUR PHONE NUMBER]` — footer of every page
 - Session dates, themes and prices in `js/sessions.js`
-- Pricing tiers on `events.html` (Classic €39 / Bloom €55 / Group from €35)
 - The founding story on `about.html` (marked `<em>Placeholder</em>`)
 - Testimonials on `index.html` (labelled "placeholder review")
 - Gallery photos — tiles are colour blocks; drop images into `images/gallery/`
-- The contact form isn't connected to an inbox. Easiest fix: add
-  `action="https://formspree.io/f/yourFormId" method="POST"` to the `<form>` tag.
+- There is no contact page or form — guests reach you via the footer's email address
+  and Instagram link.
 - The booking panel's copy is English only. The FR/NL switcher reads from the
   `translations` object at the top of `js/main.js`.
 

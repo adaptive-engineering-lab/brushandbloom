@@ -21,9 +21,7 @@
       <ul class="nav__links">
         <li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li>
         <li><a href="about.html" data-i18n="nav.about">About</a></li>
-        <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
         <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__actions">
         <div class="lang-switch" role="group" aria-label="Language">
@@ -31,7 +29,7 @@
           <button type="button" data-lang="fr">FR</button>
           <button type="button" data-lang="nl">NL</button>
         </div>
-        <a href="events.html#schedule" class="btn btn--primary btn--sm" data-book data-i18n="common.bookNow">Book Now</a>
+        <a href="#schedule" class="btn btn--primary btn--sm" data-book data-i18n="common.bookNow">Book Now</a>
         <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -50,8 +48,8 @@
         <h1><span data-i18n="home.hero.title1">Paint, sip,</span> <em data-i18n="home.hero.title2">and let your creativity bloom</em></h1>
         <p class="lead" data-i18n="home.hero.lead">Relaxed paint &amp; sip evenings in Brussels — no experience needed, just good company, a glass in hand, and a canvas that's all yours.</p>
         <div class="hero__actions">
-          <a href="events.html#schedule" class="btn btn--primary" data-book data-i18n="common.bookNow">Book Now</a>
-          <a href="events.html" class="btn btn--outline" data-i18n="common.viewEvents">View Upcoming Events</a>
+          <a href="#schedule" class="btn btn--primary" data-book data-i18n="common.bookNow">Book Now</a>
+          <a href="#schedule" class="btn btn--outline" data-i18n="common.viewEvents">View Upcoming Events</a>
         </div>
         <div class="hero__meta">
           <div>
@@ -93,6 +91,29 @@
             <span data-i18n="home.badge">Next session opening soon</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= NEXT SESSION ================= -->
+  <section class="section section--tight" id="schedule">
+    <div class="container">
+      <div class="text-center max-680 mx-auto" data-reveal>
+        <span class="eyebrow center" data-i18n="home.next.eyebrow">Next Session</span>
+        <h2 data-i18n="home.next.title">Your next evening at the studio</h2>
+      </div>
+      <div class="divider" aria-hidden="true">
+        <svg viewBox="0 0 90 18" fill="none"><path d="M0 9H30" stroke="currentColor" stroke-width="1"/><path d="M60 9H90" stroke="currentColor" stroke-width="1"/><path d="M45 2 L50 9 L45 16 L40 9 Z" fill="currentColor"/></svg>
+      </div>
+      <div class="max-680 mx-auto" data-reveal>
+        <div data-schedule></div>
+        <noscript>
+          <p class="form-note text-center">Our calendar needs JavaScript to display. Email
+            <a href="mailto:hello@brushandbloom.be" style="color:var(--rose-deep)">hello@brushandbloom.be</a>
+            and we'll send you the next date.</p>
+        </noscript>
+        <p class="form-note text-center" style="margin-top:22px;">Sessions run most Saturdays. We open one date at a time so every evening stays small.</p>
       </div>
     </div>
   </section>
@@ -204,7 +225,7 @@
           </div>
         </div>
       </div>
-      <p class="text-center form-note" style="margin-top:28px;">Placeholder reviews — swap in real guest quotes when you have them (see README-CONTENT-TODO.md).</p>
+      <p class="text-center form-note" style="margin-top:28px;">Placeholder reviews — swap in real guest quotes when you have them.</p>
     </div>
   </section>
 
@@ -216,8 +237,8 @@
         <h2 data-i18n="home.cta.title">Ready to create your next memory?</h2>
         <p class="max-560 mx-auto" data-i18n="home.cta.lead">Spots are limited at every session — reserve yours before it fills up.</p>
         <div class="hero__actions" style="justify-content:center;margin-top:28px;">
-          <a href="events.html#schedule" class="btn btn--primary" data-book data-i18n="common.bookNow">Book Now</a>
-          <a href="contact.html" class="btn btn--outline-light" data-i18n="common.learnMore">Get in Touch</a>
+          <a href="#schedule" class="btn btn--primary" data-book data-i18n="common.bookNow">Book Now</a>
+          <a href="mailto:hello@brushandbloom.be" class="btn btn--outline-light" data-i18n="common.learnMore">Get in Touch</a>
         </div>
       </div>
     </div>
@@ -244,10 +265,8 @@
         <h5 data-i18n="footer.explore">Explore</h5>
         <ul>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
-          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          </ul>
       </div>
       <div>
         <h5 data-i18n="footer.contact">Contact</h5>

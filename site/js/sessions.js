@@ -4,8 +4,12 @@
    THIS IS THE ONLY FILE YOU EDIT EACH WEEK.
 
    Everything on the site that mentions a session reads from
-   the list below: the schedule on events.html, the "next
-   session" line on the home page, and the booking panel.
+   the list below: the next-session block on the home page and
+   the booking panel.
+
+   Only the FIRST session in the list is ever shown publicly
+   (see showOnlyNextSession below) — keep the next date at the
+   top and queue future ones underneath.
 
    day   : number shown big on the date block  ("14")
    mon   : three-letter month under it          ("Sep")
@@ -85,6 +89,12 @@ window.BB_SESSIONS = [
 
 window.BB_CONFIG = {
   checkoutEnabled: false,
+
+  /* One evening at a time. The site advertises only the first
+     session in the list above, and the panel opens straight
+     onto it. Set to false to show the whole list instead. */
+  showOnlyNextSession: true,
+
   contactEmail: "hello@brushandbloom.be",
   maxSeats: 6,
   collectPhone: false,
