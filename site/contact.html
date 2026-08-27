@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Brush &amp; Bloom</title>
+<meta name="description" content="Get in touch with Brush &amp; Bloom — questions about sessions, private groups and gift vouchers in Brussels.">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">
+        <img src="images/logo.png" alt="Brush & Bloom logo">
+        <span class="nav__brand-text">Brush <span>&amp;</span> Bloom</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="nl">NL</button>
+        </div>
+        <a href="events.html#schedule" class="btn btn--primary btn--sm" data-book data-i18n="common.bookNow">Book Now</a>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container" data-reveal>
+      <p class="breadcrumb"><a href="index.html">Home</a> — Contact</p>
+      <span class="eyebrow center" data-i18n="contact.eyebrow">Contact</span>
+      <h1 data-i18n="contact.title">We'd love to hear from you</h1>
+      <p class="lead max-560 mx-auto">Questions about a session, a private group, or a gift voucher? Send us a note.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:48px;align-items:start;">
+
+        <div data-reveal>
+          <h2 data-i18n="contact.form.title">Send us a message</h2>
+          <form data-contact-form novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="c-first">First name</label>
+                <input id="c-first" name="first" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label for="c-last">Last name</label>
+                <input id="c-last" name="last" type="text" autocomplete="family-name" required>
+              </div>
+              <div class="form-field full">
+                <label for="c-email">Email</label>
+                <input id="c-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field full">
+                <label for="c-subject">What's it about?</label>
+                <select id="c-subject" name="subject">
+                  <option>A public session</option>
+                  <option>A private group booking</option>
+                  <option>Gift vouchers</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-field full">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="message" rows="6" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary" data-i18n="common.sendMessage">Send Message</button>
+            <p class="form-note" data-form-status style="display:none;"></p>
+            <p class="form-note">We usually reply within a day. Prefer email? Write to
+              <a href="mailto:hello@brushandbloom.be" style="color:var(--rose-deep)">hello@brushandbloom.be</a>.</p>
+          </form>
+        </div>
+
+        <div data-reveal>
+          <div class="contact-info-card">
+            <div class="contact-info-row">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              </div>
+              <div>
+                <h5>Studio</h5>
+                <p>[Add your full studio address]<br>Brussels, Belgium</p>
+              </div>
+            </div>
+            <div class="contact-info-row">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p><a href="mailto:hello@brushandbloom.be" style="color:var(--rose-deep)">hello@brushandbloom.be</a></p>
+              </div>
+            </div>
+            <div class="contact-info-row">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p>[YOUR PHONE NUMBER]</p>
+              </div>
+            </div>
+            <div class="contact-info-row">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </div>
+              <div>
+                <h5>Opening hours</h5>
+                <p>[Add your opening hours, e.g. Wed–Sun, 17:00–22:00]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-frame" style="margin-top:24px;">
+            Map goes here — drop in a Google Maps embed once the studio address is confirmed.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <span class="eyebrow center" style="color:var(--gold-soft)"><span class="script" style="color:var(--rose-pale)">&amp;</span></span>
+        <h2>Already know which evening you want?</h2>
+        <p class="max-560 mx-auto">Seats are limited at every session — reserve yours before it fills up.</p>
+        <div class="hero__actions" style="justify-content:center;margin-top:28px;">
+          <a href="events.html#schedule" class="btn btn--primary" data-book data-i18n="common.bookNow">Book Now</a>
+          <a href="events.html" class="btn btn--outline-light" data-i18n="common.viewEvents">View Upcoming Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Brush & Bloom logo">
+          <span>Brush &amp; Bloom</span>
+        </div>
+        <p data-i18n="footer.tagline">Create. Connect. Bloom.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/brushandbloom.be/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5 data-i18n="footer.explore">Explore</h5>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.contact">Contact</h5>
+        <ul>
+          <li>Brussels, Belgium</li>
+          <li><a href="mailto:hello@brushandbloom.be">hello@brushandbloom.be</a></li>
+          <li>[YOUR PHONE NUMBER]</li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.follow">Follow</h5>
+        <p>@brushandbloom.be</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-year></span> Brush &amp; Bloom. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/sessions.js"></script>
+<script src="js/booking-panel.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

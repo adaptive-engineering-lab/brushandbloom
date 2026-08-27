@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brush &amp; Bloom — Paint &amp; Sip Experiences</title>
+<meta name="description" content="Brush & Bloom hosts relaxed paint &amp; sip evenings — sip a drink, follow a guided painting, and leave with a canvas (and new friends). No experience needed.">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">
+        <img src="images/logo.png" alt="Brush & Bloom logo">
+        <span class="nav__brand-text">Brush <span>&amp;</span> Bloom</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="nl">NL</button>
+        </div>
+        <a href="events.html#schedule" class="btn btn--primary btn--sm" data-i18n="common.bookNow">Book Now</a>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div data-reveal>
+        <span class="eyebrow" data-i18n="home.eyebrow">Paint. Sip. Bloom.</span>
+        <h1><span data-i18n="home.hero.title1">Paint, sip,</span> <em data-i18n="home.hero.title2">and let your creativity bloom</em></h1>
+        <p class="lead" data-i18n="home.hero.lead">Relaxed paint &amp; sip evenings in Brussels — no experience needed, just good company, a glass in hand, and a canvas that's all yours.</p>
+        <div class="hero__actions">
+          <a href="events.html#schedule" class="btn btn--primary" data-i18n="common.bookNow">Book Now</a>
+          <a href="events.html" class="btn btn--outline" data-i18n="common.viewEvents">View Upcoming Events</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <strong>500+</strong>
+            <span data-i18n="home.meta.guests">Guests welcomed</span>
+          </div>
+          <div>
+            <strong>60+</strong>
+            <span data-i18n="home.meta.sessions">Sessions hosted</span>
+          </div>
+          <div>
+            <strong>4.9★</strong>
+            <span data-i18n="home.meta.rating">Average rating</span>
+          </div>
+        </div>
+      </div>
+      <div data-reveal>
+        <div class="hero__art">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M75 40 L125 40 L118 85 A18 18 0 0 1 82 85 Z" stroke="#4A2F22" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M82 48 H118 L114.4 78 A14.4 14.4 0 0 1 85.6 78 Z" fill="#C08D7E" opacity="0.55"/>
+            <path d="M100 103 V148" stroke="#4A2F22" stroke-width="2.2"/>
+            <path d="M78 148 H122" stroke="#4A2F22" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M142 58 L58 142" stroke="#B8863F" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M133 49 L151 67" stroke="#4A2F22" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M151 67 L159 59" stroke="#4A2F22" stroke-width="2.4" stroke-linecap="round"/>
+            <g transform="translate(152,145)">
+              <circle cx="-11" cy="-4" r="8" fill="#EFD9D2"/>
+              <circle cx="11" cy="-4" r="8" fill="#EFD9D2"/>
+              <circle cx="-7" cy="11" r="8" fill="#EFD9D2"/>
+              <circle cx="9" cy="12" r="8" fill="#EFD9D2"/>
+              <circle r="6" fill="#C08D7E"/>
+            </g>
+            <path d="M35 175 Q55 155 35 132" stroke="#B8863F" stroke-width="1.4" fill="none"/>
+            <path d="M30 150 Q20 148 16 138" stroke="#B8863F" stroke-width="1.4" fill="none"/>
+          </svg>
+          <div class="hero__badge">
+            <span class="script">B&amp;B</span>
+            <span data-i18n="home.badge">Next session opening soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="text-center max-680 mx-auto" data-reveal>
+        <span class="eyebrow center" data-i18n="home.features.eyebrow">Why Brush &amp; Bloom</span>
+        <h2 data-i18n="home.features.title">An evening built for unwinding</h2>
+      </div>
+      <div class="divider" aria-hidden="true">
+        <svg viewBox="0 0 90 18" fill="none"><path d="M0 9H30" stroke="currentColor" stroke-width="1"/><path d="M60 9H90" stroke="currentColor" stroke-width="1"/><path d="M45 2 L50 9 L45 16 L40 9 Z" fill="currentColor"/></svg>
+      </div>
+      <div class="grid-3">
+        <div class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-.8 2-1.8 0-.5-.2-1-.6-1.4-.4-.4-.6-.8-.6-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.7-9-7.7Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/><circle cx="17" cy="11" r="1"/></svg>
+          </div>
+          <h3>No Experience Needed</h3>
+          <p>A step-by-step guided painting session designed for total beginners — and just as fun for seasoned painters.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 6a4 4 0 0 1-8 0L7 3Z"/><path d="M12 13v6"/><path d="M8 21h8"/></svg>
+          </div>
+          <h3>Drink in Hand</h3>
+          <p>Sip your drink of choice while you paint — every ticket includes a welcome glass to set the mood.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.8.4 5 2.4 5 5.8"/></svg>
+          </div>
+          <h3>Good Company</h3>
+          <p>Come solo, with friends, or as a date night — every session is a warm, welcoming room to create in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center max-680 mx-auto" data-reveal>
+        <span class="eyebrow center" data-i18n="home.steps.eyebrow">How It Works</span>
+        <h2 data-i18n="home.steps.title">Your evening in four steps</h2>
+      </div>
+      <div class="divider" aria-hidden="true">
+        <svg viewBox="0 0 90 18" fill="none"><path d="M0 9H30" stroke="currentColor" stroke-width="1"/><path d="M60 9H90" stroke="currentColor" stroke-width="1"/><path d="M45 2 L50 9 L45 16 L40 9 Z" fill="currentColor"/></svg>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal>
+          <div class="step__num"></div>
+          <h4>Pick a Session</h4>
+          <p>Browse upcoming themes and dates, and choose the one that speaks to you.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num"></div>
+          <h4>Reserve Your Spot</h4>
+          <p>Book online — spots are limited to keep every session relaxed and personal.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num"></div>
+          <h4>Arrive &amp; Settle In</h4>
+          <p>Grab your seat, pour your first glass, and get your apron and supplies.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num"></div>
+          <h4>Paint &amp; Take It Home</h4>
+          <p>Follow along at your own pace and leave with a finished piece — and new friends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center max-680 mx-auto" data-reveal>
+        <span class="eyebrow center" data-i18n="home.testimonials.eyebrow">What Guests Say</span>
+        <h2 data-i18n="home.testimonials.title">Evenings worth remembering</h2>
+      </div>
+      <div class="divider" aria-hidden="true">
+        <svg viewBox="0 0 90 18" fill="none"><path d="M0 9H30" stroke="currentColor" stroke-width="1"/><path d="M60 9H90" stroke="currentColor" stroke-width="1"/><path d="M45 2 L50 9 L45 16 L40 9 Z" fill="currentColor"/></svg>
+      </div>
+      <div class="grid-3">
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="quote">"Such a relaxed, fun evening — I went in nervous about painting and left with something I'm actually proud of."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">S</div>
+            <div><strong>Sophie</strong><span>Guest — placeholder review</span></div>
+          </div>
+        </div>
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="quote">"Booked this for a birthday and everyone, from total beginners to my artsy friend, had a blast."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">L</div>
+            <div><strong>Léa</strong><span>Guest — placeholder review</span></div>
+          </div>
+        </div>
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="quote">"The instructor was so patient and encouraging. Already booked my next session!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">N</div>
+            <div><strong>Noor</strong><span>Guest — placeholder review</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center form-note" style="margin-top:28px;">Placeholder reviews — swap in real guest quotes when you have them (see README-CONTENT-TODO.md).</p>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <span class="eyebrow center" style="color:var(--gold-soft)"><span class="script" style="color:var(--rose-pale)">&amp;</span></span>
+        <h2 data-i18n="home.cta.title">Ready to create your next memory?</h2>
+        <p class="max-560 mx-auto" data-i18n="home.cta.lead">Spots are limited at every session — reserve yours before it fills up.</p>
+        <div class="hero__actions" style="justify-content:center;margin-top:28px;">
+          <a href="events.html#schedule" class="btn btn--primary" data-i18n="common.bookNow">Book Now</a>
+          <a href="contact.html" class="btn btn--outline-light" data-i18n="common.learnMore">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Brush & Bloom logo">
+          <span>Brush &amp; Bloom</span>
+        </div>
+        <p data-i18n="footer.tagline">Create. Connect. Bloom.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/brushandbloom.be/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5 data-i18n="footer.explore">Explore</h5>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events &amp; Pricing</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.contact">Contact</h5>
+        <ul>
+          <li>Brussels, Belgium</li>
+          <li><a href="mailto:hello@brushandbloom.be">hello@brushandbloom.be</a></li>
+          <li>[YOUR PHONE NUMBER]</li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.follow">Follow</h5>
+        <p>@brushandbloom.be</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-year></span> Brush &amp; Bloom. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
