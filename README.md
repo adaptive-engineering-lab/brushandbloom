@@ -95,5 +95,5 @@ The site deploys from the `site/` directory as a static build — no framework p
 build command.
 
 ```sh
-npx vercel deploy --prod site
+npx vercel deploy --prod site   # project: brushandbloom → https://brushandbloom.vercel.app
 ```
