@@ -47,8 +47,6 @@
       "home.next.title": "Votre prochaine soirée à l'atelier",
       "home.features.eyebrow": "Pourquoi Brush & Bloom",
       "home.features.title": "Une soirée pensée pour se détendre",
-      "home.cta.title": "Prêt·e à créer votre prochain souvenir ?",
-      "home.cta.lead": "Places limitées à chaque atelier — réservez la vôtre avant qu'elle ne s'envole.",
 
       "about.eyebrow": "Notre histoire",
       "about.title": "Créer. Connecter. Fleurir.",
@@ -108,8 +106,6 @@
       "home.next.title": "Jouw volgende avond in het atelier",
       "home.features.eyebrow": "Waarom Brush & Bloom",
       "home.features.title": "Een avond gemaakt om te ontspannen",
-      "home.cta.title": "Klaar voor jouw volgende herinnering?",
-      "home.cta.lead": "Beperkte plaatsen per workshop — boek de jouwe voor ze vol zit.",
 
       "about.eyebrow": "Ons verhaal",
       "about.title": "Creëer. Verbind. Bloei.",
